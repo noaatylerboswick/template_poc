@@ -1,0 +1,152 @@
+name: Climavision Request for Change
+descrption: ""
+title: "[RFC]: "
+labels: ["RFC"]
+projects:
+assignees:
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Change Request Type
+      options:
+        - Accelerated change - rapid response required for change or corrective action
+        - Routine change - cosmetic upgrade, bug fix, patch
+        - Major change - new technology, major S/W or H/W upgrade
+    validations:
+      required: True
+  - type: textarea
+    id: submitter
+    attributes:
+      label: Submitter's Organization
+      placeholder: SA or analyst
+    validations:
+      required: True
+  - type: textarea
+    id: implementer
+    attributes:
+      label: Group executing the change
+      placeholder: SA or analyst
+    validations:
+      required: True
+  - type: textarea
+    id: software_unit
+    attributes:
+      label: Software unit or module
+      placeholder: If Applicable
+  - type: textarea
+    id: software_version
+    attributes:
+      label: Software version number
+      placeholder: If Applicable
+  - type: textarea
+    id: description_what
+    attributes:
+      label: What's the change?
+    validations:
+      required: True
+  - type: textarea
+    id: description_why
+    attributes:
+      label: Why the change?
+    validations:
+      required: True
+  - type: textarea
+    id: description_who
+    attributes:
+      label: Who is the change for?
+    validations:
+      required: True
+  - type: textarea
+    id: description_where
+    attributes:
+      label: Where are the changes being made?
+    validations:
+      required: True
+  - type: textarea
+    id: description_impact
+    attributes:
+      label: Impact of the change
+    validations:
+      required: True
+  - type: dropdown
+    id: description_impact
+    attributes:
+      label: Will customers see outages/slowdowns?
+      options:
+        - Yes
+        - No
+    validations:
+      required: True
+  - type: textarea
+    id: description_ticket
+    attributes:
+      label: Helpdesk ticket Number
+      placeholder: If Applicable
+  - type: textarea
+    id: description_cause
+    attributes:
+      label: Root Cause
+      placeholder: If Applicable
+      Root Cause:
+  - type: textarea
+    id: description_notes
+    attributes:
+      label: Release Notes
+      placeholder: If Applicable
+  - type: textarea
+    id: schedule_start_date
+    attributes:
+      label: Proposed Start Date
+      placeholder: mm/dd/yyyy
+    validations:
+      required: True
+  - type: textarea
+    id: schedule_start_time
+    attributes:
+      label: Proposed Start Time
+      placeholder: 00:00
+    validations:
+      required: True
+  - type: textarea
+    id: schedule_end_date
+    attributes:
+      label: Proposed End Date
+      placeholder: mm/dd/yyyy
+    validations:
+      required: True
+  - type: textarea
+    id: schedule_end_time
+    attributes:
+      label: Proposed End Time
+      placeholder: 00:00
+    validations:
+      required: True
+  - type: textarea
+    id: plan_instructions
+    attributes:
+      label: Implementation Instructions
+      placeholder: Lengthy instructions (i.e. longer than one short paragraph) should be put into a Google Doc and then include the link to the Doc here. Implementation instructions must include a backout plan.
+    validations:
+      required: True
+  - type: textarea
+    id: plan_backout
+    attributes:
+      label: Back-out Plan
+      placeholder: Link to doc or full instructions of backing out of the changes
+    validations:
+      required: True
+  - type: textarea
+    id: plan_testing
+    attributes:
+      label: Testing Summary
+      placeholder: Describe pre-implementation/pre-RFC submission testing you&#39;ve done for this change. Lengthy summaries (i.e. longer than one short paragraph) should be put into a Google Doc and then include the link to the Doc here.
+    validations:
+      required: True
+  - type: textarea
+    id: documentation
+    attributes:
+      label: Documentation/Diagram Updates;
+      placeholder: Does this change require any updates to documentation or diagrams? If not, respond no, if so provide a short summary of needed updates.
+    validations:
+      required: True
