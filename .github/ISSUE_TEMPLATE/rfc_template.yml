@@ -98,7 +98,7 @@ body:
     id: schedule_start_date
     attributes:
       label: Proposed Start Date
-      placeholder: mm/dd/yyyy
+      placeholder: "mm/dd/yyyy"
     validations:
       required: True
   - type: textarea
@@ -112,7 +112,7 @@ body:
     id: schedule_end_date
     attributes:
       label: Proposed End Date
-      placeholder: mm/dd/yyyy
+      placeholder: "mm/dd/yyyy"
     validations:
       required: True
   - type: textarea
