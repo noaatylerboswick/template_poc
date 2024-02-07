@@ -1,9 +1,10 @@
 name: Climavision Request for Change
-descrption: ""
+description: "POC template for submitting RFCs"
 title: "[RFC]: "
 labels: ["RFC"]
-projects:
+projects: ["template_poc"]
 assignees:
+  - noaatylerboswick
 body:
   - type: dropdown
     id: type
@@ -70,12 +71,12 @@ body:
     validations:
       required: True
   - type: dropdown
-    id: description_impact
+    id: description_outage
     attributes:
       label: Will customers see outages/slowdowns?
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
     validations:
       required: True
   - type: textarea
@@ -88,7 +89,6 @@ body:
     attributes:
       label: Root Cause
       placeholder: If Applicable
-      Root Cause:
   - type: textarea
     id: description_notes
     attributes:
