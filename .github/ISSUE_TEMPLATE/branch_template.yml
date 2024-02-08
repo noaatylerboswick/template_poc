@@ -1,0 +1,17 @@
+name: BRANCHED! Request for Change
+description: "POC template for submitting RFCs, but this time on a branch"
+title: "[RFC]: "
+labels: ["RFC"]
+projects: ["template_poc"]
+assignees:
+  - noaatylerboswick
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Can you see this?
+      options:
+        - of course, this beta feature is cool
+        - i don't know how i can see this if it doesn't work
+    validations:
+      required: True
